@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="_6_filename">文件名称</string>
+     <string name="_6_filecontent">输入内容</string>
+     <string name="_6_button">保存</string>
+     <string name="_6_success">文件保存成功</string>
+     <string name="_6_error">文件保存失败</string>
+     
+     <string name="_6_name">名称</string>
+     <string name="_6_age">年龄</string>
+     <string name="_6_savepreference">保存参数</string>
+     <string name="_6_getpreference">恢复参数</string>
+</resources>

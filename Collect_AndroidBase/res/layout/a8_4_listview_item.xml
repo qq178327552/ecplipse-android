@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 创建线性布局,水平布局方式(horizontal),高度包裹,宽度填充 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/_8_4_id"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/_8_4_name"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/_8_4_amount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

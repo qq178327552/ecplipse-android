@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="_2_mobileLable">输入手机号</string>
+    <string name="_2_contentLable">输入短信内容</string>
+    <string name="_2_button">发送短信</string>
+    <string name="_2_success">发送完成</string>
+</resources>

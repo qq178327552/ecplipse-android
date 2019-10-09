@@ -1,0 +1,48 @@
+<!-- 设置界面代码:
+		layout文件命名规则:因为界面文件会自动生成资源存入R文件中供activity查询使用:只能包含小写字母、数组、下划线,开头需以小写字母开头
+		线性布局:LinearLayout,放在布局内的显示控件,以一行或一列的方式显示
+			orientation:显示方式,
+				值为vertical为垂列直显示;
+				值为horizontal为水平显示
+			layout_width,layout_height:布局中的宽度和高度,
+				值为fill_parent为占满整个屏幕,
+				值warp_content为包裹内容的值,
+				值为100dip为设置为100dip像素,其他单位有:dip,dp,sp,px,in,mm,pt
+				值为text指显示文字中的内容
+		相对布局:RelativeLayout,每个控件相对其他元素位置布局
+			控件中:layout_below为相对另一个控件的位置
+				值为@id/label为相对label控件的下方,@id无加号,表示引用控件而不是添加控件
+			控件中:layout_marginLeft为与另一个控件相对位置
+				值10px为左侧间距10px
+			控件中:layout_alignParentRight为相对父控件右侧位置
+				值为ture为相对于父控件右对齐
+			控件中:layout_toLeftOf为相对于另一个控件的左侧
+				值为@id/ok为在ok控件的左侧
+			控件中:layout_alignTop为顶部对齐
+				值为@id/ok为与ok控件顶部对齐
+		表格布局:TableLayout,表格的形式布局
+			<TableRow>为第n行一行中单元格中的内容,多个子控件为该行的各个表格
+		帧布局:FrameLayout,以左上角原点控件的叠加
+		绝对布局:AbsoluteLayout,以原点每个控件以绝对位置布局
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+	<!-- 控件设置:
+			TextView:用于显示文字
+				layout_width,layout_height:控件的宽度和高度
+				minLines:控件大小显示设置中最低的行数
+				id:在R文件生成位移的标识
+					值为:@+id/[id名]:在R文件中添加到id内部类,并以id号作为常量供后台调用该控件
+				text:在控件中显示的文字
+				textSize:调整文字大小
+					值为18sp为调整字数为10sp大小
+	 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+</RelativeLayout>
